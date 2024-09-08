@@ -1,1 +1,11 @@
-hello
+<app-main-layout>
+  <div class="app">
+    <h1 class="app__title">Password Strength Check</h1>
+
+    <input class="app__password-input" [(ngModel)]="password" />
+
+    <app-password-strength-meter
+      [value]="password"
+    ></app-password-strength-meter>
+  </div>
+</app-main-layout>
