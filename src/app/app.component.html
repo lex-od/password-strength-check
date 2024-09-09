@@ -3,7 +3,11 @@
     <div class="app__content-wrap">
       <h1 class="app__title">Password Strength Check</h1>
 
-      <input class="app__password-input" [(ngModel)]="password" />
+      <input
+        class="app__password-input"
+        type="password"
+        [(ngModel)]="password"
+      />
 
       <app-password-strength-meter
         [value]="password"
